@@ -1,0 +1,40 @@
+What is the use of an iframe tag? With Example.
+
+The iframe tag in HTML is used to embed another document, like a whole webpage, video, or other web content, 
+within the current HTML document. It essentially creates a window within your webpage to display external content.
+
+Embedding external videos: You can embed videos from services like YouTube or Vimeo directly into your webpage 
+                           using the iframe tag and the provided embed code. This eliminates the need to leave your 
+                           website for users to watch the video.
+
+Displaying dynamic content:  Iframes can be used to display content that updates frequently, like stock quotes, 
+                             news feeds, or live sports scores. This way, the external content can be refreshed 
+                             independently without reloading the entire webpage.
+
+Adding maps: You can embed interactive maps from services like Google Maps using iframes. This allows users to 
+             explore the map location directly on your webpage.
+
+Creating advertisements: While not the most user-friendly approach, iframes can be used to display advertisements 
+                         from external providers.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video with iframe</title>
+</head>
+<body>
+  <h1>Watch this cool video</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
+
+Important considerations when using iframes:
+
+Security:Be cautious when embedding content from untrusted sources, as iframes can introduce security 
+         vulnerabilities.
+Accessibility:Ensure the embedded content is accessible for users with disabilities, as iframes might create 
+              navigation challenges.
+Content control:You generally have less control over the appearance and behavior of the embedded content compared 
+                to native HTML elements.

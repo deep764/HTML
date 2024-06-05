@@ -1,0 +1,42 @@
+What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? With Example.
+
+id Attribute:
+
+Uniqueness: An id attribute must be unique within a single HTML document. There can only be one element with a 
+            specific id value on a page.
+Purpose: Primarily used to target a single, specific element for styling or scripting.
+Selection Method (CSS): The id selector (#) is used to target elements with a specific id in CSS.
+Selection Method (JavaScript): JavaScript's getElementById() method is used to access elements by their id.
+
+
+class Attribute:
+
+Uniqueness: A class attribute can be assigned to multiple elements on the same page.
+Purpose: Used to group elements that share similar characteristics or styling needs.
+Selection Method (CSS): The class selector (.) is used to target elements with a specific class name in CSS. 
+                        You can also target elements with multiple classes using combinations 
+                        (e.g., .important.warning).
+Selection Method (JavaScript): JavaScript's getElementsByClassName() method is used to retrieve a collection of 
+                               all elements with a specific class name.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #special-heading {
+    color: blue;
+    text-decoration: underline;
+  }
+  .important {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h1 id="special-heading">This is a special heading</h1>
+  <p class="important">This text is important.</p>
+  <p class="important">This text is also important!</p>
+</body>
+</html>
