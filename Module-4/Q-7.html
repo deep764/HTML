@@ -1,0 +1,32 @@
+How can image repetition of the backup be controlled?
+
+Target the element: Similar to changing background color, you'll need to identify the element where you want to 
+                    control the background image repetition using CSS selectors in your style sheet.
+
+Use the background-repeat property: This property defines how the background image tiles within the element's 
+                                    background area. It accepts different values for various repetition behaviors:
+
+repeat-x: Repeats the image horizontally across the element's width.
+repeat-y: Repeats the image vertically across the element's height.
+repeat: Repeats the image in both horizontal and vertical directions (default behavior).
+no-repeat: Displays the image only once, at the top-left corner of the element by default.
+
+Example:
+
+/* Repeat image horizontally */
+element {
+  background-image: url("image.jpg");
+  background-repeat: repeat-x;
+}
+
+/* Repeat image vertically */
+element {
+  background-image: url("image.jpg");
+  background-repeat: repeat-y;
+}
+
+/* No repetition (display once) */
+element {
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+}
