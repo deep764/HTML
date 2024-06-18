@@ -1,0 +1,30 @@
+How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
+
+In HTML, it is not possible to merge multiple cells into one, but you can give the impression that you can by 
+utilizing the colspan and rowspan attributes.
+
+colspan: This property indicates how many columns a given cell should span. 
+         It is positioned inside the cell you wish to enlarge's opening <td> tag.
+
+rowspan: This property indicates how many rows a given cell should span.
+         It is positioned inside the opening <td> tag, just like colspan.
+
+Example:
+
+<table>
+    <tr>
+      <th colspan="2">Product</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Shirt</td>
+      <td>T-Shirt</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td>Dress Shirt</td>
+      <td>$20</td>
+    </tr>
+  </table>
+  
+

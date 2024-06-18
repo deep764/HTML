@@ -1,0 +1,38 @@
+How to insert a picture into a background image of a web page? With Example.
+
+Establish the HTML Framework:
+
+Start with a <html>, <head>, and <body> tag-based basic HTML structure.
+Make a container element (such as a <div>) inside the <body> to hold the image stacking effect.
+
+
+Use CSS to Add a Background Image:
+
+To specify the CSS styles, insert a <style> tag in the <head> section.
+Use a selector to target the container element (div, for example).
+Give your background image's URL or path when setting the background-image attribute for the container.
+
+Utilise the Foreground Image as a Different Element:
+
+To make an image appear in front of the container element (<div>) in the <body>, place a <img> tag inside it.
+Use the src attribute inside the <img> tag to set the image source.
+The foreground picture can be styled with CSS inside
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; }  div {
+    background-image: url('path/to/background.jpg');
+    width: 500px;  height: 300px;  position: relative;  }
+  .foreground-img {
+    position: absolute;  top: 100px;  left: 50%;  transform: translateX(-50%);  width: 200px;  }
+</style>
+</head>
+<body>
+<div>
+  <img src="path/to/foreground.jpg" class="foreground-img" alt="Foreground Image">
+</div>
+</body>
+</html>

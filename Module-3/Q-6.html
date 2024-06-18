@@ -1,0 +1,44 @@
+What is the ‘class’ attribute in HTML? With Example.
+
+When it comes to linking particular items on your website with JavaScript functionality and CSS styling, the class 
+attribute in HTML is a very useful tool. It functions much like a label that you may put on items.
+
+This is how the class attribute is broken down:
+
+Its function is to provide an HTML element one or more class names.
+Placement: The element's beginning tag has the class attribute.
+Structure: Class names (e.g., \p class="highlight important">This content is important!</p>) are separated by spaces.
+
+
+Take Advantage of the class Attribute:
+
+Reusable Styles: You can apply the same styles (specified in CSS) to several items at once by giving each element a 
+class name. This encourages the maintainability of programs and uniformity.
+JavaScript has the ability to target items with particular class names in order to execute commands or change their 
+behavior. This technique is known as targeted scripting.
+Flexibility: Multiple classes can be applied to a single element, enabling more intricate styling combinations.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .important 
+  {
+    color: red;
+    font-weight: bold;
+  }
+  .highlight 
+  {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+  <p class="important">This text is important!</p>
+  <p class="highlight">This text is highlighted.</p>
+  <p class="important highlight">This text is both important and highlighted!</p>
+</body>
+</html>
+
